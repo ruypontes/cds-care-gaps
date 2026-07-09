@@ -1,0 +1,11 @@
+{
+  "resourceType": "Bundle",
+  "id": "case-poor-control",
+  "type": "collection",
+  "entry": [
+    {"resource": {"resourceType": "Patient", "id": "p1", "gender": "male", "birthDate": "1966-04-10"}},
+    {"resource": {"resourceType": "Condition", "id": "c1-dm2", "clinicalStatus": {"coding": [{"code": "active"}]}, "code": {"coding": [{"system": "http://snomed.info/sct", "code": "44054006", "display": "Type 2 diabetes mellitus"}]}}},
+    {"resource": {"resourceType": "MedicationRequest", "id": "m1-met", "status": "active", "medicationCodeableConcept": {"coding": [{"display": "metformin"}]}}},
+    {"resource": {"resourceType": "Observation", "id": "o1-a1c", "status": "final", "code": {"coding": [{"system": "http://loinc.org", "code": "4548-4", "display": "Hemoglobin A1c"}]}, "valueQuantity": {"value": 9.4, "unit": "%"}}}
+  ]
+}

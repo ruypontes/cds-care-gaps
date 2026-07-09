@@ -1,0 +1,10 @@
+{
+  "resourceType": "Bundle",
+  "id": "case-no-hba1c",
+  "type": "collection",
+  "entry": [
+    {"resource": {"resourceType": "Patient", "id": "p2", "gender": "female", "birthDate": "1972-12-01"}},
+    {"resource": {"resourceType": "Condition", "id": "c2-dm2", "clinicalStatus": {"coding": [{"code": "active"}]}, "code": {"coding": [{"system": "http://snomed.info/sct", "code": "44054006", "display": "Type 2 diabetes mellitus"}]}}},
+    {"resource": {"resourceType": "MedicationRequest", "id": "m2-lis", "status": "active", "medicationCodeableConcept": {"coding": [{"display": "lisinopril"}]}}}
+  ]
+}

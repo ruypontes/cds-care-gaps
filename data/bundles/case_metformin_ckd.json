@@ -1,0 +1,12 @@
+{
+  "resourceType": "Bundle",
+  "id": "case-metformin-ckd",
+  "type": "collection",
+  "entry": [
+    {"resource": {"resourceType": "Patient", "id": "p3", "gender": "male", "birthDate": "1958-08-25"}},
+    {"resource": {"resourceType": "Condition", "id": "c3-dm2", "clinicalStatus": {"coding": [{"code": "active"}]}, "code": {"coding": [{"system": "http://snomed.info/sct", "code": "44054006", "display": "Type 2 diabetes mellitus"}]}}},
+    {"resource": {"resourceType": "Condition", "id": "c3-ckd", "clinicalStatus": {"coding": [{"code": "active"}]}, "code": {"coding": [{"system": "http://snomed.info/sct", "code": "709044004", "display": "Chronic kidney disease"}]}}},
+    {"resource": {"resourceType": "MedicationRequest", "id": "m3-met", "status": "active", "medicationCodeableConcept": {"coding": [{"display": "metformin"}]}}},
+    {"resource": {"resourceType": "Observation", "id": "o3-a1c", "status": "final", "code": {"coding": [{"system": "http://loinc.org", "code": "4548-4", "display": "Hemoglobin A1c"}]}, "valueQuantity": {"value": 7.2, "unit": "%"}}}
+  ]
+}
